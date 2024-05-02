@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // Deklarasi variabel
+    string namaKaryawan, pendidikan;
+    int golonganJabatan, jamKerja;
+    float gajiPokok = 300000;
+    float tunjanganJabatan, tunjanganPendidikan, honorLembur = 0, totalHonor;
+
+    // Input data
+    cout << "PROGRAM HITUNG NILAI AKHIR" << endl;
+    cout << "Nama Karyawan : ";
+    getline(cin, namaKaryawan);
+    cout << "Golongan Jabatan (1/2/3): ";
+    cin >> golonganJabatan;
+    cout << "Pendidikan (SMA/D1/D3/S1): ";
+    cin >> pendidikan;
+    cout << "Jumlah jam kerja : ";
+    cin >> jamKerja;
+
+    // Hitung tunjangan jabatan
+    if (golonganJabatan == 1) {
+        tunjanganJabatan = 0.05 * gajiPokok;
+    } else if (golonganJabatan == 2) {
+        tunjanganJabatan = 0.10 * gajiPokok;
+    } else if (golonganJabatan == 3) {
+        tunjanganJabatan = 0.15 * gajiPokok;
+    } else {
+        cout << "Golongan jabatan tidak valid" << endl;
+        return 1;
+    }
+
+    // Hitung tunjangan pendidikan
+    if (pendidikan == "SMA") {
+        tunjanganPendidikan = 0.025 * gajiPokok;
+    } else if (pendidikan == "D1") {
+        tunjanganPendidikan = 0.05 * gajiPokok;
+    } else if (pendidikan == "D3") {
+        tunjanganPendidikan = 0.20 * gajiPokok;
+    } else if (pendidikan == "S1") {
+        tunjanganPendidikan = 0.30 * gajiPokok;
+    } else {
+        cout << "Pendidikan tidak valid" << endl;
+        return 1;
+    }
+
+    // Hitung honor lembur
+    if (jamKerja > 8) {
+        honorLembur = (jamKerja - 8) * 3500;
+    }
+
+    // Hitung total honor yang diterima
+    totalHonor = gajiPokok + tunjanganJabatan + tunjanganPendidikan + honorLembur;
+
+    // Tampilkan hasil
+    cout << "\nKaryawan yang bernama " << namaKaryawan << endl;
+    cout << "Tunjangan Jabatan Rp " << tunjanganJabatan << endl;
+    cout << "Tunjangan Pendidikan Rp " << tunjanganPendidikan << endl;
+    cout << "Honor Lembur Rp " << honorLembur << endl;
+    cout << "Total honor yang diterima Rp " << totalHonor << endl;
+
+    return 0;
+}

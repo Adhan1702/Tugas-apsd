@@ -1,0 +1,45 @@
+1. Minta masukan nama siswa, nilai pertandingan I, II, dan III
+2. Hitung nilai rata-rata
+3. Tentukan juara berdasarkan nilai rata-rata
+4. Tampilkan hasil
+
+PROGRAM HITUNG NILAI RATA-RATA
+1. Minta nama siswa
+2. Minta nilai Pertandingan I
+3. Minta nilai Pertandingan II
+4. Minta nilai Pertandingan III
+5. Hitung nilai rata-rata
+6. Jika nilai rata-rata > 80, maka juara = "Juara I"
+   Jika nilai rata-rata > 75, maka juara = "Juara II"
+   Jika nilai rata-rata > 65, maka juara = "Juara III"
+   Jika tidak, juara = "Tidak Juara"
+7. Tampilkan nama siswa, nilai rata-rata, dan juara
+
+ALGORITMA:
+
+DEKLARASI:
+    namaSiswa: string
+    nilaiPertandingan1, nilaiPertandingan2, nilaiPertandingan3: float
+    nilaiRataRata: float
+    juara: string
+
+1. Tampilkan "PROGRAM HITUNG NILAI RATA-RATA"
+2. Tampilkan "Nama Siswa : "
+3. Masukkan namaSiswa
+4. Tampilkan "Nilai Pertandingan I : "
+5. Masukkan nilaiPertandingan1
+6. Tampilkan "Nilai Pertandingan II : "
+7. Masukkan nilaiPertandingan2
+8. Tampilkan "Nilai Pertandingan III : "
+9. Masukkan nilaiPertandingan3
+10. Hitung nilaiRataRata = (nilaiPertandingan1 + nilaiPertandingan2 + nilaiPertandingan3) / 3
+11. Jika nilaiRataRata > 80, maka
+        juara = "Juara I"
+    Jika nilaiRataRata > 75, maka
+        juara = "Juara II"
+    Jika nilaiRataRata > 65, maka
+        juara = "Juara III"
+    Selain itu,
+        juara = "Tidak Juara"
+12. Tampilkan "Siswa yang bernama ", namaSiswa
+13. Tampilkan "Memperoleh nilai rata-rata ", nilaiRataRata, " dan menjadi juara ke-", juara, " dari hasil perlombaan yang diikutinya."

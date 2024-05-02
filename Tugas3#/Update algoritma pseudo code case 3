@@ -1,0 +1,33 @@
+1. Minta masukan nama karyawan, golongan jabatan, pendidikan, dan jumlah jam kerja.
+2. Hitung tunjangan jabatan.
+3. Hitung tunjangan pendidikan.
+4. Hitung honor lembur.
+5. Tampilkan hasil.
+
+PROGRAM HITUNG NILAI AKHIR
+1. Minta nama karyawan
+2. Minta golongan jabatan
+3. Minta pendidikan
+4. Minta jumlah jam kerja
+5. Jika golongan jabatan = 1, maka
+       tunjanganJabatan = 5% * 300000
+   Jika golongan jabatan = 2, maka
+       tunjanganJabatan = 10% * 300000
+   Jika golongan jabatan = 3, maka
+       tunjanganJabatan = 15% * 300000
+6. Jika pendidikan = "SMA", maka
+       tunjanganPendidikan = 2.5% * 300000
+   Jika pendidikan = "D1", maka
+       tunjanganPendidikan = 5% * 300000
+   Jika pendidikan = "D3", maka
+       tunjanganPendidikan = 20% * 300000
+   Jika pendidikan = "S1", maka
+       tunjanganPendidikan = 30% * 300000
+7. Jika jumlah jam kerja > 8, maka
+       honorLembur = (jumlah jam kerja - 8) * 3500
+8. Tampilkan hasil:
+       Nama karyawan ...
+       Tunjangan Jabatan Rp ...
+       Tunjangan Pendidikan Rp ...
+       Honor Lembur Rp ...
+       Total honor yang diterima Rp ...

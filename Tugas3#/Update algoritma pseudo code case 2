@@ -1,0 +1,59 @@
+1. Minta masukan nama siswa, nilai keaktifan, nilai tugas, dan nilai ujian.
+2. Hitung nilai murni dari masing-masing nilai.
+3. Hitung nilai akhir.
+4. Tentukan grade berdasarkan nilai akhir.
+5. Tampilkan hasil.
+
+PROGRAM HITUNG NILAI AKHIR
+1. Minta nama siswa
+2. Minta nilai keaktifan
+3. Minta nilai tugas
+4. Minta nilai ujian
+5. Hitung nilai murni keaktifan = nilai keaktifan * 0.20
+6. Hitung nilai murni tugas = nilai tugas * 0.30
+7. Hitung nilai murni ujian = nilai ujian * 0.50
+8. Hitung nilai akhir = nilai murni keaktifan + nilai murni tugas + nilai murni ujian
+9. Jika nilai akhir > 80, maka grade = "A"
+   Jika nilai akhir > 70, maka grade = "B"
+   Jika nilai akhir > 56, maka grade = "C"
+   Jika nilai akhir > 46, maka grade = "D"
+   Selain itu, grade = "E"
+10. Tampilkan nama siswa, nilai murni keaktifan, nilai murni tugas, nilai murni ujian, nilai akhir, dan grade.
+
+ALGORITMA:
+
+DEKLARASI:
+    namaSiswa: string
+    nilaiKeaktifan, nilaiTugas, nilaiUjian: float
+    nilaiMurniKeaktifan, nilaiMurniTugas, nilaiMurniUjian, nilaiAkhir: float
+    grade: string
+
+1. Tampilkan "PROGRAM HITUNG NILAI AKHIR"
+2. Tampilkan "Nama Siswa : "
+3. Masukkan namaSiswa
+4. Tampilkan "Nilai Keaktifan : "
+5. Masukkan nilaiKeaktifan
+6. Tampilkan "Nilai Tugas : "
+7. Masukkan nilaiTugas
+8. Tampilkan "Nilai Ujian : "
+9. Masukkan nilaiUjian
+10. Hitung nilaiMurniKeaktifan = nilaiKeaktifan * 0.20
+11. Hitung nilaiMurniTugas = nilaiTugas * 0.30
+12. Hitung nilaiMurniUjian = nilaiUjian * 0.50
+13. Hitung nilaiAkhir = nilaiMurniKeaktifan + nilaiMurniTugas + nilaiMurniUjian
+14. Jika nilaiAkhir > 80, maka
+        grade = "A"
+    Jika nilaiAkhir > 70, maka
+        grade = "B"
+    Jika nilaiAkhir > 56, maka
+        grade = "C"
+    Jika nilaiAkhir > 46, maka
+        grade = "D"
+    Selain itu,
+        grade = "E"
+15. Tampilkan "Siswa yang bernama ", namaSiswa
+16. Tampilkan "Dengan Nilai Persentasi Yang dihasilkan:"
+17. Tampilkan "Nilai Keaktifan * 20% : ", nilaiMurniKeaktifan
+18. Tampilkan "Nilai Tugas * 30% : ", nilaiMurniTugas
+19. Tampilkan "Nilai Ujian * 50% : ", nilaiMurniUjian
+20. Tampilkan "Jadi Siswa yang bernama ", namaSiswa, " memperoleh nilai akhir sebesar ", nilaiAkhir, " dengan grade ", grade
