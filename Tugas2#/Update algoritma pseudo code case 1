@@ -1,0 +1,27 @@
+PROGRAM HITUNG_NILAI_RATA_RATA
+BEGIN
+    DECLARE Nim_Siswa, Nama_Siswa, Nilai_Tugas_1, Nilai_Tugas_2, Nilai_Tugas_3, Rata_Rata AS INTEGER
+
+    // Input data dari pengguna
+    PRINT "PROGRAM HITUNG NILAI RATA-RATA"
+    PRINT "Nim Siswa : "
+    INPUT Nim_Siswa
+    PRINT "Nama Siswa : "
+    INPUT Nama_Siswa
+    PRINT "Nilai Tugas I : "
+    INPUT Nilai_Tugas_1
+    PRINT "Nilai Tugas II : "
+    INPUT Nilai_Tugas_2
+    PRINT "Nilai Tugas III : "
+    INPUT Nilai_Tugas_3
+
+    // Hitung nilai rata-rata
+    Rata_Rata = (Nilai_Tugas_1 + Nilai_Tugas_2 + Nilai_Tugas_3) / 3
+
+    // Tampilkan hasil
+    PRINT "Nim ", Nim_Siswa, " Siswa yang bernama ", Nama_Siswa
+    PRINT "Memperoleh nilai rata-rata ", Rata_Rata, " dari hasil tugas yang diikutinya."
+    
+    // Menahan tampilan hasil agar tidak langsung kembali ke listing program
+    GETCH()
+END

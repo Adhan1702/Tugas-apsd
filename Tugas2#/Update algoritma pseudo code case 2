@@ -1,0 +1,33 @@
+PROGRAM HITUNG_NILAI_AKHIR
+BEGIN
+    DECLARE Nama_Siswa AS STRING
+    DECLARE Nilai_Keaktifan, Nilai_Tugas, Nilai_Ujian AS FLOAT
+    DECLARE Nilai_Murni_Keaktifan, Nilai_Murni_Tugas, Nilai_Murni_Ujian, Nilai_Akhir AS FLOAT
+
+    // Input data dari pengguna
+    PRINT "PROGRAM HITUNG NILAI AKHIR"
+    PRINT "Nama Siswa : "
+    INPUT Nama_Siswa
+    PRINT "Nilai Keaktifan : "
+    INPUT Nilai_Keaktifan
+    PRINT "Nilai Tugas : "
+    INPUT Nilai_Tugas
+    PRINT "Nilai Ujian : "
+    INPUT Nilai_Ujian
+
+    // Proses perhitungan nilai murni
+    Nilai_Murni_Keaktifan = Nilai_Keaktifan * 0.20
+    Nilai_Murni_Tugas = Nilai_Tugas * 0.50
+    Nilai_Murni_Ujian = Nilai_Ujian * 0.30
+
+    // Hitung nilai akhir
+    Nilai_Akhir = Nilai_Murni_Keaktifan + Nilai_Murni_Tugas + Nilai_Murni_Ujian
+
+    // Tampilkan hasil
+    PRINT "Siswa yang bernama ", Nama_Siswa
+    PRINT "Dengan Nilai Persentasi Yang dihasilkan."
+    PRINT "Nilai Keaktifan * 20% : ", Nilai_Murni_Keaktifan
+    PRINT "Nilai Tugas * 50% : ", Nilai_Murni_Tugas
+    PRINT "Nilai Ujian * 30% : ", Nilai_Murni_Ujian
+    PRINT "Jadi Siswa yang bernama ", Nama_Siswa, " memperoleh nilai akhir sebesar ", Nilai_Akhir
+END
